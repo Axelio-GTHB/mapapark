@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB79EDDD1D94E17800CF855E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79EDDC1D94E17800CF855E /* AppDelegate.swift */; };
+		EB79EDDF1D94E17800CF855E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79EDDE1D94E17800CF855E /* ViewController.swift */; };
+		EB79EDE21D94E17800CF855E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79EDE01D94E17800CF855E /* Main.storyboard */; };
+		EB79EDE41D94E17800CF855E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB79EDE31D94E17800CF855E /* Assets.xcassets */; };
+		EB79EDE71D94E17800CF855E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79EDE51D94E17800CF855E /* LaunchScreen.storyboard */; };
+		EB79EDF21D94E17800CF855E /* mapaparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79EDF11D94E17800CF855E /* mapaparkTests.swift */; };
+		EB79EDFD1D94E17800CF855E /* mapaparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79EDFC1D94E17800CF855E /* mapaparkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB79EDEE1D94E17800CF855E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB79EDD11D94E17800CF855E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB79EDD81D94E17800CF855E;
+			remoteInfo = mapapark;
+		};
+		EB79EDF91D94E17800CF855E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB79EDD11D94E17800CF855E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB79EDD81D94E17800CF855E;
+			remoteInfo = mapapark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB79EDD91D94E17800CF855E /* mapapark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapapark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB79EDDC1D94E17800CF855E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB79EDDE1D94E17800CF855E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB79EDE11D94E17800CF855E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB79EDE31D94E17800CF855E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB79EDE61D94E17800CF855E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB79EDE81D94E17800CF855E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB79EDED1D94E17800CF855E /* mapaparkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapaparkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB79EDF11D94E17800CF855E /* mapaparkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapaparkTests.swift; sourceTree = "<group>"; };
+		EB79EDF31D94E17800CF855E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB79EDF81D94E17800CF855E /* mapaparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapaparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB79EDFC1D94E17800CF855E /* mapaparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapaparkUITests.swift; sourceTree = "<group>"; };
+		EB79EDFE1D94E17800CF855E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB79EDD61D94E17800CF855E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDEA1D94E17800CF855E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDF51D94E17800CF855E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB79EDD01D94E17800CF855E = {
+			isa = PBXGroup;
+			children = (
+				EB79EDDB1D94E17800CF855E /* mapapark */,
+				EB79EDF01D94E17800CF855E /* mapaparkTests */,
+				EB79EDFB1D94E17800CF855E /* mapaparkUITests */,
+				EB79EDDA1D94E17800CF855E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB79EDDA1D94E17800CF855E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB79EDD91D94E17800CF855E /* mapapark.app */,
+				EB79EDED1D94E17800CF855E /* mapaparkTests.xctest */,
+				EB79EDF81D94E17800CF855E /* mapaparkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB79EDDB1D94E17800CF855E /* mapapark */ = {
+			isa = PBXGroup;
+			children = (
+				EB79EDDC1D94E17800CF855E /* AppDelegate.swift */,
+				EB79EDDE1D94E17800CF855E /* ViewController.swift */,
+				EB79EDE01D94E17800CF855E /* Main.storyboard */,
+				EB79EDE31D94E17800CF855E /* Assets.xcassets */,
+				EB79EDE51D94E17800CF855E /* LaunchScreen.storyboard */,
+				EB79EDE81D94E17800CF855E /* Info.plist */,
+			);
+			path = mapapark;
+			sourceTree = "<group>";
+		};
+		EB79EDF01D94E17800CF855E /* mapaparkTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB79EDF11D94E17800CF855E /* mapaparkTests.swift */,
+				EB79EDF31D94E17800CF855E /* Info.plist */,
+			);
+			path = mapaparkTests;
+			sourceTree = "<group>";
+		};
+		EB79EDFB1D94E17800CF855E /* mapaparkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB79EDFC1D94E17800CF855E /* mapaparkUITests.swift */,
+				EB79EDFE1D94E17800CF855E /* Info.plist */,
+			);
+			path = mapaparkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB79EDD81D94E17800CF855E /* mapapark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB79EE011D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapapark" */;
+			buildPhases = (
+				EB79EDD51D94E17800CF855E /* Sources */,
+				EB79EDD61D94E17800CF855E /* Frameworks */,
+				EB79EDD71D94E17800CF855E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mapapark;
+			productName = mapapark;
+			productReference = EB79EDD91D94E17800CF855E /* mapapark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB79EDEC1D94E17800CF855E /* mapaparkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB79EE041D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapaparkTests" */;
+			buildPhases = (
+				EB79EDE91D94E17800CF855E /* Sources */,
+				EB79EDEA1D94E17800CF855E /* Frameworks */,
+				EB79EDEB1D94E17800CF855E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB79EDEF1D94E17800CF855E /* PBXTargetDependency */,
+			);
+			name = mapaparkTests;
+			productName = mapaparkTests;
+			productReference = EB79EDED1D94E17800CF855E /* mapaparkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB79EDF71D94E17800CF855E /* mapaparkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB79EE071D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapaparkUITests" */;
+			buildPhases = (
+				EB79EDF41D94E17800CF855E /* Sources */,
+				EB79EDF51D94E17800CF855E /* Frameworks */,
+				EB79EDF61D94E17800CF855E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB79EDFA1D94E17800CF855E /* PBXTargetDependency */,
+			);
+			name = mapaparkUITests;
+			productName = mapaparkUITests;
+			productReference = EB79EDF81D94E17800CF855E /* mapaparkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB79EDD11D94E17800CF855E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Christian Axel Waltier Barraza";
+				TargetAttributes = {
+					EB79EDD81D94E17800CF855E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LT4DEQUCPU;
+						ProvisioningStyle = Automatic;
+					};
+					EB79EDEC1D94E17800CF855E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LT4DEQUCPU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB79EDD81D94E17800CF855E;
+					};
+					EB79EDF71D94E17800CF855E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LT4DEQUCPU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB79EDD81D94E17800CF855E;
+					};
+				};
+			};
+			buildConfigurationList = EB79EDD41D94E17800CF855E /* Build configuration list for PBXProject "mapapark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB79EDD01D94E17800CF855E;
+			productRefGroup = EB79EDDA1D94E17800CF855E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB79EDD81D94E17800CF855E /* mapapark */,
+				EB79EDEC1D94E17800CF855E /* mapaparkTests */,
+				EB79EDF71D94E17800CF855E /* mapaparkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB79EDD71D94E17800CF855E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB79EDE71D94E17800CF855E /* LaunchScreen.storyboard in Resources */,
+				EB79EDE41D94E17800CF855E /* Assets.xcassets in Resources */,
+				EB79EDE21D94E17800CF855E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDEB1D94E17800CF855E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDF61D94E17800CF855E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB79EDD51D94E17800CF855E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB79EDDF1D94E17800CF855E /* ViewController.swift in Sources */,
+				EB79EDDD1D94E17800CF855E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDE91D94E17800CF855E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB79EDF21D94E17800CF855E /* mapaparkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79EDF41D94E17800CF855E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB79EDFD1D94E17800CF855E /* mapaparkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB79EDEF1D94E17800CF855E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB79EDD81D94E17800CF855E /* mapapark */;
+			targetProxy = EB79EDEE1D94E17800CF855E /* PBXContainerItemProxy */;
+		};
+		EB79EDFA1D94E17800CF855E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB79EDD81D94E17800CF855E /* mapapark */;
+			targetProxy = EB79EDF91D94E17800CF855E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB79EDE01D94E17800CF855E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB79EDE11D94E17800CF855E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB79EDE51D94E17800CF855E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB79EDE61D94E17800CF855E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB79EDFF1D94E17800CF855E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB79EE001D94E17800CF855E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB79EE021D94E17800CF855E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapapark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapapark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EB79EE031D94E17800CF855E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapapark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapapark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EB79EE051D94E17800CF855E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapaparkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapaparkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapapark.app/mapapark";
+			};
+			name = Debug;
+		};
+		EB79EE061D94E17800CF855E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapaparkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapaparkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapapark.app/mapapark";
+			};
+			name = Release;
+		};
+		EB79EE081D94E17800CF855E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapaparkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapaparkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mapapark;
+			};
+			name = Debug;
+		};
+		EB79EE091D94E17800CF855E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LT4DEQUCPU;
+				INFOPLIST_FILE = mapaparkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Axelio.mapaparkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mapapark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB79EDD41D94E17800CF855E /* Build configuration list for PBXProject "mapapark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB79EDFF1D94E17800CF855E /* Debug */,
+				EB79EE001D94E17800CF855E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB79EE011D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapapark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB79EE021D94E17800CF855E /* Debug */,
+				EB79EE031D94E17800CF855E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB79EE041D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapaparkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB79EE051D94E17800CF855E /* Debug */,
+				EB79EE061D94E17800CF855E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB79EE071D94E17800CF855E /* Build configuration list for PBXNativeTarget "mapaparkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB79EE081D94E17800CF855E /* Debug */,
+				EB79EE091D94E17800CF855E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB79EDD11D94E17800CF855E /* Project object */;
+}
