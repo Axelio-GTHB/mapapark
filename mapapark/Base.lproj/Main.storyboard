@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="mapapark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYP-dL-jP6" customClass="GMSMapView">
+                                <frame key="frameInset" minY="58" width="375" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="...m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yET-Yl-Oxq" userLabel="Label Meters">
+                                <frame key="frameInset" minX="166" minY="323" width="42" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-PC-3Gd">
+                                <frame key="frameInset" minY="20" width="359" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAm-O6-M6B">
+                                        <state key="normal" title="Buscar direccion"/>
+                                        <connections>
+                                            <action selector="showSearchController" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttw-VD-Sqs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo8-lC-Wrl">
+                                        <state key="normal" title="Confirmar punto"/>
+                                        <connections>
+                                            <action selector="startTracking" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFm-AN-lvq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wo8-lC-Wrl" secondAttribute="trailing" id="soC-EP-mJf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona un punto en el mapa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWy-IP-yqO">
+                                <frame key="frameInset" minY="637" width="375" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="owJ-PC-3Gd" secondAttribute="trailing" id="1uN-la-H9Y"/>
+                            <constraint firstItem="owJ-PC-3Gd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="41J-Ok-UlN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="owJ-PC-3Gd" secondAttribute="trailing" id="9wO-OD-1hj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bWy-IP-yqO" secondAttribute="bottom" constant="10" id="Mgh-jF-sEv"/>
+                            <constraint firstItem="yET-Yl-Oxq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="TkS-e7-gFf"/>
+                            <constraint firstAttribute="trailing" secondItem="bWy-IP-yqO" secondAttribute="trailing" id="WR0-M5-pOo"/>
+                            <constraint firstItem="owJ-PC-3Gd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gcf-Fa-uQB"/>
+                            <constraint firstItem="yET-Yl-Oxq" firstAttribute="top" secondItem="owJ-PC-3Gd" secondAttribute="bottom" constant="40" id="iKk-az-a8q"/>
+                            <constraint firstAttribute="trailing" secondItem="owJ-PC-3Gd" secondAttribute="trailing" id="okj-o0-4wI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="owJ-PC-3Gd" secondAttribute="trailing" id="uSN-JU-ekx"/>
+                            <constraint firstItem="bWy-IP-yqO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wQp-s9-pg4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonConfirmation" destination="Wo8-lC-Wrl" id="9ka-zX-n3U"/>
+                        <outlet property="buttonSearchAddress" destination="AAm-O6-M6B" id="q6n-lU-vxp"/>
+                        <outlet property="labelDistance" destination="bWy-IP-yqO" id="7jY-vK-GO4"/>
+                        <outlet property="labelMeters" destination="yET-Yl-Oxq" id="27E-bG-MFB"/>
+                        <outlet property="mapView" destination="DYP-dL-jP6" id="laY-US-JCn"/>
+                        <outlet property="searchDisplayController" destination="zMa-BI-RQA" id="dY1-5D-BdM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="pWP-jV-ND1">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gco-ia-Y9r"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="fYY-mC-YGS"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="bkE-eX-q5v"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="vSl-KF-Jfr"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="zMa-BI-RQA">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="o1U-ZJ-RSl"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="9kN-L2-21L"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="8Xx-gh-foi"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="B7O-pl-Qrd"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="60" y="49.925037481259373"/>
         </scene>
     </scenes>
 </document>
